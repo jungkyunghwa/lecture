@@ -11,4 +11,5 @@ div{/*div는 flex container역할 display: flex;, figure가 flwx-item역할 */
 }
 div figure{
   margin: 0;
+  padding: 0;
 }

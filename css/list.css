@@ -1,0 +1,19 @@
+@charset "utf-8";
+ul{
+  list-style-type: upper-alpha;
+}
+ol{
+  list-style-type: upper-roman;
+}
+dl{
+  border: 2px solid rgb(255, 0, 85);
+  padding: 20px;
+}
+dt{
+text-decoration: underline;
+font-size: 24px;
+color: rgb(255, 136, 0);
+}
+dd{
+  margin: 0;
+}

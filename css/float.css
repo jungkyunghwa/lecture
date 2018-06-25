@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+section{
+  background-color: #111634;
+  color: #fff;
+  margin: 2em;
+  padding: 1em;
+  overflow: hidden;
+}
+img{
+  width: 500px;
+  height: auto;
+}
+.f-left{
+  float: left;
+  margin-right: 50px;
+}
+.f-right{
+  float: right;
+  margin-left: 50px;
+}

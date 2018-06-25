@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.sub{
+  background-color: rgb(204, 150, 255);
+  position: relative; /*relative는 떠있고 기존 공간을 그대로 유지하며 위치변경*/
+  top: 100px;
+  left: 200px;
+  z-index: 2; /*레이어 순서 index가 클수록 위로 올라옴*/
+}
+.quick{
+  background-color: rgb(255, 69, 184);
+  position: fixed;
+  z-index: 3;
+  top: 50px;
+  right: 50px;
+}
+div{
+  position: relative;
+}
+p{
+  background-color: rgb(137, 255, 255);
+}
+.note{
+  background-color: rgb(133, 255, 133);
+  position: absolute; /*absolute는 기존 공간을 없앰*/
+  width: 300px;
+  top: 0;
+  left: 0;
+}

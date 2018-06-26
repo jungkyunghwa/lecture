@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.wrap{
+  background-color: yellow;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; /*축의 기준*/
+  justify-content: space-evenly;
+  border: 10px solid blue;
+}
+
+.wrap div{
+  background-color: pink;
+  flex-basis: 100px; /*기준 박스 크기*/
+  border:1px solid red;
+}
+.w1{
+  order:1;
+  flex-shrink: 1;
+  flex-grow: 2;
+}
+.w2{
+  flex-shrink: 2;
+  flex-grow: 3; /*(기준 100px)box 확대*/
+}
+
+.w3{
+  order: -1;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.w4{
+  order:1;
+  flex-shrink: 1;
+  flex-grow: 1;
+}

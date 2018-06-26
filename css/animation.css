@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@keyframes text-ani{
+  0%{
+    font-size: 16px;
+    color: blanchedalmond;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  100%{
+    font-size: 48px;
+    color: saddlebrown;
+    top: 150px;
+    left: 450px;
+    opacity: 1;
+  }
+}
+
+.text-wrap{
+  background-color: salmon;
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text/*애니메이션 호출*/{
+  background-color: pink;
+  position: absolute; /*부모기준으로 위치 설정*/
+  opacity: 0;
+  /* top: 100px;
+  left: 300px; */
+  animation-name: text-ani;
+  /* animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 5s; */
+  animation: text-ani 5s forwards ease-in-out infinite alternate 5s;/*나중에 나오는 초가 delay로 인식*/
+}
+/*transform*/
+@keyframes img-ani{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(700px);
+  }
+}
+.img-wrap{
+  background: #F4F4F4;
+  padding: 50px;
+}
+.neo{
+  animation: img-ani 3000ms forwards 3 alternate;
+}
